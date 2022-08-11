@@ -1,0 +1,859 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.subspan {
+    background-color: #03AFA4;
+    padding: 0.2rem 0.5rem;
+}
+
+.subtitle {
+    margin-top: 5px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ******************************************** HEADER *************************************** */
+
+header #header-container{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 2px solid #efefef;
+    height: 75px;
+}
+
+#header-container h2 {
+    margin-left: 3rem;
+}
+
+#header-container h2:hover {
+    color: #03AFA4;
+    transition: 500ms;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    font-weight: 600;
+}
+
+#nav-bar a{
+    text-decoration: none;
+    transition: 500ms;
+    color: #000;
+}
+
+#nav-bar a:hover {
+    color: #03AFA4;
+    transform: scale(1.3);
+}
+
+#nav-icon {
+    display: none;
+    font-size: 1.6rem;
+}
+
+#header-social {
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 2rem;
+}
+
+#header-social a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+#header-social a :hover {
+    color: #03AFA4;
+    transition: 500ms;
+    transform: scale(1.5);
+}
+
+/* ******************************************** HOME **************************************** */
+
+#home {
+    max-width: 100%;
+    height: 100vh;
+    z-index: 100;
+    background-color: #03AFA4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-container {
+    margin-top: 75px;
+    display: flex;
+    width: 90%;
+    height: 60%;
+}
+
+#home-title {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center
+}
+
+#home-title h1 {
+    font-weight: 300;
+    font-size: 2.8rem;
+}
+
+#home-title span {
+    font-weight: 600;
+    font-size: 5.5rem;
+    line-height: 1.2;
+    margin-left: -5px;
+}
+
+#home-title h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#home-title #home-buttons {
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+#home-title #home-buttons #portfolio-btn {
+    background-color: #000;
+    padding: 1rem 3rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#home-title #home-buttons #contact-btn {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+}
+
+#home-img {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-img img {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1rem solid #fff;
+}
+
+
+/* ***************************************************** ABOUT *************************************** */
+
+#about {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#about-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+#about-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+#about-info1 {
+    width: 60%;
+}
+
+#about-info1 h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#about-info1 h2 span {
+    font-weight: 700;
+    border-bottom: 2px solid #03AFA4;
+}
+
+#about-info1 p {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    line-height: 2;
+}
+
+#about-info2 {
+    width: 35%;
+}
+
+#about-info2 #circle-container {
+    width: 100%;
+    text-align: center;
+    height: 60%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about-info2 #circle-container #circle {
+    border-radius: 50%;
+    width: 40%;
+    height: 100%;
+    background-color: #03AFA4;
+}
+
+#about-info2 #circle-container #circle span {
+    font-size: 7rem;
+    font-weight: 500;
+}
+
+#about-info2 #circle-container h3 {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#about-info2 #circle-container h3 span {
+    font-weight: 700;
+}
+
+
+#about-data {
+    display: flex;
+    width: 100%;
+}
+
+#about-data .data-row {
+    flex-grow: 1;
+}
+
+#about-data .data-row .data1 {
+    color: #686969;
+    font-weight: 500;
+}
+
+#about-data .data-row .data2 {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+#about-data .data-row .data2 a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* ********************************************** SERVICES ********************************************* */
+
+#services {
+    max-width: 100%;
+    display: flex;
+}
+
+#services-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 125px;
+}
+
+#services-container #services-frame {
+    display:flex;
+    flex-wrap: wrap;
+    margin: 50px 5%;
+}
+
+#services-container #services-frame .services-row {
+    width: 33%;
+    text-align: center;
+    padding: 25px;
+}
+
+#services-container #services-frame .services-row i {
+    font-size: 3.5rem;
+    color: #03AFA4;
+}
+
+#services-container #services-frame .services-row h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+#services-container #services-frame .services-row p {
+    color: #686969;
+    line-height: 2;
+}
+
+/* *********************************************** RESUME ******************************************** */
+
+#resume {
+    max-width: 100%;
+    display: flex;
+}
+
+#resume #resume-container {
+    margin-top: 125px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#resume #resume-container #resume-frame {
+    display: flex;
+    margin: 50px 5%;
+    width: 95%;
+}
+
+#resume #resume-container #resume-frame .resume-row {
+    width: 33%;
+    text-align: left;
+}
+
+#resume #resume-container #resume-frame .resume-row h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#resume #resume-container #resume-frame .resume-row2 {
+    border-left: #03AFA4 2px solid;
+    margin-right: 50px;
+    padding-left: 20px;
+    text-align: left;
+    margin-top: 25px;
+}
+
+#resume #resume-container #resume-frame .resume-row2 hr {
+    margin: 50px 0;
+    opacity: 0.5;
+}
+
+#resume #resume-container #resume-frame .resume-row2 h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#resume #resume-container #resume-frame .resume-row2 h4 {
+    font-weight: 500;
+}
+
+#resume #resume-container #resume-frame .resume-row2 p {
+    color: #686969;
+    margin-top: 25px;
+    line-height: 2;
+}
+
+#resume #resume-container #skillh2 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: -50px;
+}
+
+#resume #resume-container #resume-skills {
+    display: flex;
+    width: 90%;
+    margin: 50px 5%;
+    justify-content: space-between;
+}
+
+#resume #resume-container #resume-skills .skill-row {
+    width: 45%;
+    text-align: left;
+}
+
+#resume #resume-container #resume-skills .skill-row .skill {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+#resume #resume-container #resume-skills .skill-row .skill-bar {
+    width: 100%;
+    height: 7px;
+    background-color: lightgray;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+#resume #resume-container #resume-skills .skill-row .skill-bar2 {
+    height: 7px;
+    background-color: #03AFA4;
+    border-radius: 20px;
+}
+
+#resume #resume-container #resume-skills .skill-row #wdbar {
+    width: 65%;
+}
+
+#resume #resume-container #resume-skills .skill-row #htmlbar {
+    width: 75%;
+}
+
+#resume #resume-container #resume-skills .skill-row #cssbar {
+    width: 60%;
+}
+
+#resume #resume-container #resume-skills .skill-row #jsbar {
+    width: 65%;
+}
+
+#resume #resume-container #resume-skills .skill-row #reactbar {
+    width: 50%;
+}
+
+#resume #resume-container #resume-skills .skill-row #gitbar {
+    width: 90%;
+}
+
+#resume #resume-container #cv a {
+    background-color: #fff;
+    padding: 15px 45px;
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #000;
+    font-weight: 500;
+}
+
+#resume #resume-container #cv a:hover {
+    background-color: #000;
+    color: #03AFA4;
+    transition: 500ms ease;
+}
+
+#resume #resume-container #cv {
+    margin: 50px 0;
+}
+
+/* ************************************************************* PORTFOLIO *************************************************** */
+
+#portfolio {
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+#portfolio #portfolio-container {
+    text-align: center;
+    margin-top: 125px;
+    width: 100%;
+}
+
+#portfolio #portfolio-container #portfolio-frame {
+    width: 80%;
+    height: 100%;
+    margin: 30px 10%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 32%);
+}
+
+#portfolio #portfolio-container #portfolio-frame .portfolio-row {
+    width: 100%;
+    height: 100%;
+}
+
+#portfolio #portfolio-container #portfolio-frame .portfolio-row img {
+    width: 100%;
+    height: 100%;
+}
+
+/* *************************************************************** CONTACT ***************************************************** */
+
+#contact {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #03AFA4;    
+}
+
+#contact #contact-container {
+    margin-top: 100px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+}
+
+#contact #contact-container #contact-info {
+    width: 40%;
+}
+
+#contact #contact-container #contact-info h2 {
+    font-weight: 600;
+    font-size: 2.3rem;
+    margin-bottom: 50px;
+}
+
+#contact #contact-container #contact-info p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+#contact #contact-container #contact-info h3 {
+    margin-top: 40px;
+}
+
+
+#contact #contact-container #contact-form {
+    width: 45%;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact #contact-container #contact-form h2 {
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+#contact #contact-container #contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact #contact-container #contact-form form label {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+#contact #contact-container #contact-form form input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    color: #000;
+    font-size: 1.4rem;
+    padding: 0.6rem 0;
+    outline: none;
+}
+
+#contact #contact-container #contact-form form input:focus {
+    border-bottom: 2px solid #000;
+    transition: 500ms ease;
+}
+
+#contact #contact-container #contact-form form textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    font-size: 1.4rem;
+    padding: 0.6rem 0;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    height: 175px;
+}
+
+#contact #contact-container #contact-form form textarea:focus {
+    border-bottom: 2px solid #000;
+    transition: 500ms ease;
+}
+
+#contact #contact-container #contact-form form #submit-container {
+    margin-top: 20px;
+}
+
+#contact #contact-container #contact-form form #send {
+    background-color: #000;
+    color: #03AFA4;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+}
+
+/* ********************************************************** FOOTER ********************************************* */
+
+footer {
+    background-color: #000;
+    display: flex;
+    height: 20vh;
+    width: 100%;
+}
+
+footer #footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 5%;
+    align-items: center;
+}
+
+footer #footer-container #footer-icons {
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+    
+}
+
+footer #footer-container #footer-icons a{
+    color: #686969;
+    text-decoration: none;
+    font-size: 1.5rem;
+    position: sticky;
+}
+
+footer #footer-container #footer-icons a:hover {
+    color: #03AFA4;
+    transition: 500ms ease;
+    transform: scale(1.5);
+}
+
+footer #footer-container #footer-copy {
+    font-size: 1rem;
+    color: #fff;
+}
+
+footer #footer-container #footer-copy h3 a {
+    color: #03AFA4;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* *************************************************** TABLET RESPONSIVE ******************************************* */
+
+@media (max-width: 820px) {
+
+    #html-container {
+        max-width: 100%;
+    }
+
+/* *************************************** HEADER ****************************************** */
+
+
+header #header-container #nav-bar {
+    display: none;
+}
+
+#header-container #nav-icon {
+    display: flex;
+    width: 40%;
+    justify-content: flex-end;
+}
+
+#header-container #header-social {
+    display: flex;
+    width: 15%;
+}
+
+header #header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ******************************************************** HOME ************************************** */
+
+#home-container {
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#home-container #home-img {
+    width: 70%;
+    height: 70%;
+    margin-bottom: 30px;
+}
+
+#home-container #home-title {
+    width: 100%;
+    align-items: center;
+}
+
+#home-container #home-title #home-buttons {
+    text-align: center;
+}
+
+/* ****************************************************** ABOUT ****************************************** */
+
+#about-info {
+    flex-direction: column;
+    text-align: center;
+}
+
+#about-info1 {
+    width: 100%;
+}
+
+#about-info2 {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+#about-info2 #circle-container #circle {
+    width: 30%;
+    height: 100%;
+}
+
+#about-data {
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+#about-data .data-row {
+    padding: 30px 50px;
+    text-align: left;
+}
+
+#about-data #data-email {
+    width: 35%;
+}
+
+/* ************************************************ SERVICES  **************************************** */
+
+#services-container {
+    margin-top: 100px;
+}
+
+
+#services-container #services-frame {
+    flex-wrap: wrap;
+    margin: 50px 5%;
+}
+
+#services-container #services-frame .services-row {
+    width: 50%;
+}
+
+/* **************************************************** RESUME ********************************************* */
+
+#resume #resume-container #resume-frame {
+    flex-direction: column;
+}
+
+#resume #resume-container #resume-frame .resume-row {
+    width: 90%;
+    margin: 50px 10%;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++ PORTFOLIO *********************************************** */
+
+#portfolio {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#portfolio #portfolio-container {
+    width: 95%;
+    margin: 0 2.5%;
+    max-height: 100%;
+}
+
+#portfolio #portfolio-container #portfolio-frame {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+}
+
+#portfolio #portfolio-container #portfolio-frame .portfolio-row {
+    width: 100%;
+    height: 100%;
+}
+
+#portfolio #portfolio-container #portfolio-frame .portfolio-row img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ****************************************************************** CONTACT ******************************************************* */
+
+#contact {
+    width: 100%;
+    height: 120vh;
+}
+
+#contact #contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact #contact-container #contact-info {
+    width: 100%;
+    text-align: center;
+}
+
+#contact #contact-container #contact-form {
+    width: 100%;
+    margin: 50px 0;
+}
+
+#contact #contact-container #contact-form #submit-container {
+    text-align: center;
+}
+
+/* ************************************************************* FOOTER *********************************************************** */
+
+footer #footer-container {
+    flex-direction: column-reverse;
+    justify-content:center
+}
+
+footer #footer-container #footer-icons {
+    margin-top: 20px;
+    width: 30%;
+}
+
+footer #footer-container #footer-icons a {
+    font-size: 2rem;
+}
+
+footer #footer-container #footer-copy h3 {
+    font-size: 1.5rem;
+}
+
+    
+}
+
