@@ -76,7 +76,7 @@ header #header-container{
 #header-social {
     width: 10%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-right: 2rem;
 }
 
@@ -148,13 +148,13 @@ header #header-container{
     padding: 1rem 3rem;
     color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 #home-title #home-buttons #contact-btn {
     text-decoration: none;
     color: #000;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 1rem 3rem;
 }
 
@@ -856,3 +856,164 @@ footer #footer-container #footer-copy h3 {
     
 }
 
+/* ************************************************************* CELULAR RESPONSIVE ******************************************************** */
+
+@media (max-width: 412px) {
+
+    #html-container {
+        max-width: 100%;
+    }
+
+    /* *************************************************** HEADER **************************************************************** */
+
+    header #header-container {
+        width: 100%;
+    }
+
+    header #header-container h2 {
+        margin: 2%;
+        width: 50%;
+        font-size: 1.7rem;
+    }
+
+    header #header-container #nav-icon {
+        width: auto;
+        font-size: 1.9rem;
+        margin-right: 5% ;
+    }
+
+    header #header-container #header-social {
+        width: 30%;
+        margin-right: 5%;
+    }
+
+    header #header-container #header-social a {
+        font-size: 2rem;
+    }
+
+    /* ************************************************************ HOME ********************************************************** */
+
+    #home {
+        width: 100%;
+    }
+
+    #home #home-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    #home #home-container #home-title {
+        width: 100%;
+        height: 50%;
+        justify-content: flex-start;
+        margin-top: 10%;
+    }
+
+    #home #home-container #home-title h1 {
+        font-size: 2rem;
+        margin: 1%;
+    }
+
+    #home #home-container #home-title span {
+        font-size: 2.7rem;
+        margin: 1%;
+    }
+
+    #home #home-container #home-title h3 {
+        margin: 1%;
+    }
+
+    #home #home-container #home-title #home-buttons {
+        margin: 7% 5%;
+        width: 90%;
+        text-align: left;
+    }
+
+    #home #home-container #home-title #home-buttons a {
+        padding: 1rem 2rem;
+    }
+
+    #home #home-container #home-title #home-buttons a i {
+        display: none;
+    }
+
+    #home #home-container #home-img {
+        width: 95%;
+        height: 45%;
+        margin-top: 25%;
+        margin-bottom: 0;
+    }
+
+    #home #home-container #home-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* ***************************************************************** ABOUT *************************************************************** */
+
+    #about {
+        height: auto;
+    }
+
+    #about #about-container #about-info2 #circle-container #circle {
+        width: 50%;
+    }
+
+    #about #about-container #about-data {
+        width: 100%;
+        margin-right: 10%;
+    }
+
+    #about #about-container #about-data .data-row {
+        text-align: center;
+    }
+
+    /* ************************************************************** SERVICES ********************************************************* */
+
+    #services #services-container #services-frame .services-row {
+        width: 100%;
+    }
+
+    /* ******************************************************** RESUME ************************************************************* */
+
+    #resume #resume-container #resume-skills {
+        flex-direction: column;
+    }
+
+    #resume #resume-container #resume-skills .skill-row {
+        width: 100%;
+    }
+
+    /* ********************************************************** PORTFOLIO ********************************************** */
+
+    #portfolio #portfolio-container #portfolio-frame {
+        grid-template-columns: 1fr;
+    }
+
+    /* ************************************************************ CONTACT ************************************************************** */
+
+    #contact {
+        width: 100%;
+        height: auto;
+    }
+
+    #contact #contact-container #contact-info p {
+        font-size: 1.2rem;
+    }
+
+    /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FOOTER ************************************************ */
+    
+    footer #footer-container #footer-copy h3 {
+        font-size: 1rem;
+    }
+
+    footer #footer-container #footer-icons {
+        width: 50%;
+    }
+
+    footer #footer-container #footer-icons a {
+        font-size: 1.5rem;
+    }
+
+
+}
